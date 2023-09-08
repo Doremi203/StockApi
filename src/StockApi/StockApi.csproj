@@ -3,6 +3,14 @@
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <Nullable>enable</Nullable>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
+
+
+    <ItemGroup>
+      <None Remove="Dockerfile" />
+      <None Remove="docker-compose.yml" />
+      <None Remove=".dockerignore" />
+    </ItemGroup>
 
 </Project>
